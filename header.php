@@ -1,4 +1,4 @@
-<?php;
+<?php
 // Cegah cache: info server harus selalu berasal dari request yang baru
 if (!headers_sent()) {
     header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
@@ -6,8 +6,8 @@ if (!headers_sent()) {
 }
 
 // Info server untuk ditampilkan di header
-if (!function_exists('ambil_ip_server')) {
-    function ambil_ip_server(string $hostname): array
+if (!function_exists('ambil_ip_server')) {;;
+    function ambil_ip_server(string $hostname): array;
     {
         $ips = [];
         $last = null;
