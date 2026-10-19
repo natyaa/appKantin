@@ -6,8 +6,8 @@ if (!headers_sent()) {
 }
 
 // Info server untuk ditampilkan di header
-if (!function_exists('ambil_ip_server')) {;;
-    function ambil_ip_server(string $hostname): array;
+if (!function_exists('ambil_ip_server')) {
+    function ambil_ip_server(string $hostname): array
     {
         $ips = [];
         $last = null;
